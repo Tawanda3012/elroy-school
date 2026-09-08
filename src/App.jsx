@@ -10,6 +10,13 @@ import News from './pages/News';
 import Admissions from './pages/Admissions';
 import Newsletters from './pages/Newsletters';
 import Contact from './pages/Contact';
+// New "Our School" sub-pages
+import VisionValues from './pages/VisionValues';
+import MeetTheStaff from './pages/MeetTheStaff';
+import Governors from './pages/Governors';
+import SchoolPolicies from './pages/SchoolPolicies';
+import TermDates from './pages/TermDates';
+import OfstedReports from './pages/OfstedReports';
 
 function App() {
   return (
@@ -26,6 +33,13 @@ function App() {
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/newsletters" element={<Newsletters />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Our School sub-pages */}
+          <Route path="/vision-values" element={<VisionValues />} />
+          <Route path="/meet-the-staff" element={<MeetTheStaff />} />
+          <Route path="/governors" element={<Governors />} />
+          <Route path="/school-policies" element={<SchoolPolicies />} />
+          <Route path="/term-dates" element={<TermDates />} />
+          <Route path="/ofsted-reports" element={<OfstedReports />} />
         </Routes>
       </main>
       <Footer />
